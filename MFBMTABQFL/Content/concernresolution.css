@@ -1,0 +1,37 @@
+#tblConcernResolution tbody tr td:first-child  {
+    text-align: center;
+    padding:5px;
+}
+#tblConcernResolution th:first-child  {
+    text-align: center;
+    padding:5px!important;
+}
+#tblConcernResolution tr td:not(:first-child) 
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align:left;
+}
+
+#tblConcernResolution tr td:nth-last-child(1),#tblConcernResolution tr td:nth-last-child(8),#tblConcernResolution tr td:nth-last-child(9),#tblConcernResolution tr td:nth-last-child(10)
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+#tblConcernResolution th
+{
+    padding:2px!important;
+}
+
+#tblConcernResolution tbody tr
+{
+    cursor: pointer;
+}
+
+.table.dataTable
+{
+width:98%!important;
+}

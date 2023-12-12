@@ -1,0 +1,292 @@
+﻿@media screen and (max-width: 10000px) {
+    .table-responsive {
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+        -ms-overflow-style: scrollbar !important;
+        border: 1px solid #ddd;
+        display: -ms-grid;
+    }
+
+        .table-responsive > .table {
+            margin-bottom: 0;
+        }
+
+            .table-responsive > .table > thead > tr > th,
+            .table-responsive > .table > tbody > tr > th,
+            .table-responsive > .table > tfoot > tr > th,
+            .table-responsive > .table > thead > tr > td,
+            .table-responsive > .table > tbody > tr > td,
+            .table-responsive > .table > tfoot > tr > td {
+                /*white-space: pre-line;*/
+                text-align: center;
+            }
+
+        .table-responsive > .table-bordered {
+            border: 0;
+        }
+
+            .table-responsive > .table-bordered > thead > tr > th:first-child,
+            .table-responsive > .table-bordered > tbody > tr > th:first-child,
+            .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+            .table-responsive > .table-bordered > thead > tr > td:first-child,
+            .table-responsive > .table-bordered > tbody > tr > td:first-child,
+            .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+                border-left: 0;
+            }
+
+            .table-responsive > .table-bordered > thead > tr > th:last-child,
+            .table-responsive > .table-bordered > tbody > tr > th:last-child,
+            .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+            .table-responsive > .table-bordered > thead > tr > td:last-child,
+            .table-responsive > .table-bordered > tbody > tr > td:last-child,
+            .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+                border-right: 0;
+            }
+
+            .table-responsive > .table-bordered > tbody > tr:last-child > th,
+            .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+            .table-responsive > .table-bordered > tbody > tr:last-child > td,
+            .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+                border-bottom: 0;
+            }
+}
+.panel .panel-heading a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.panel-heading {
+    background-color: #007A93 !important;
+    color: #fff !important;
+    padding: 8px !important;
+    border-radius: 0px !important;
+}
+
+.panel .panel-heading .panel-title {
+    font-size: 18px;
+}
+
+[data-toggle="collapse"] .fa:before {
+    content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a";
+}
+.color-green {
+    color: green !important;
+}
+
+.color-red {
+    color: red !important;
+}
+.color-main {
+    color: #007A93 !important;
+}
+.color-circle {
+    color: #1aa3ff !important;
+}
+.color-orange {
+    color: orange !important;
+}
+
+.color-gray {
+    color: gray !important;
+}
+.progressmonitor-heading {
+  
+    padding: 1px 8px;
+    background-color: #e6e6e6;
+}
+.progressmonitor-body {
+    max-height: 450px !important;
+    overflow-y: scroll !important; 
+}
+    .btn-check {
+    color: #fff !important;
+    background-color: green !important;
+    border-color: green !important;
+}
+.btn-check-none {
+    color: green !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.btn-saveCheck {
+    background: none !important;
+}
+
+.btn-skip {
+    color: #fff !important;
+    background-color: gray !important;
+    border-color: gray !important;
+}
+.btn-skip-none {
+    color: gray !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.color-green {
+    color: green !important;
+}
+
+.color-red {
+    color: red !important;
+}
+
+.color-orange {
+    color: orange !important;
+}
+
+.color-gray {
+    color: gray !important;
+}
+
+.btn-skipCheck {
+    background: none !important;
+}
+.btn-closed {
+    color: #fff !important;
+    background-color: red !important;
+    border-color: red !important;
+}
+.btn-closed-none {
+    color: red !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.btn-closeCheck {
+    background: none !important;
+}
+.popup-file-icon
+{
+padding: 7px;
+background: #00677F;
+color: #fff;
+border-radius: 3px;
+cursor: pointer;
+}
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.overflow-attachment1 {
+	white-space: nowrap !important;
+	max-width: 100% !important;
+	font-size: 13px !important;
+	font-weight: 800;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
+.overflow-attachment2 {
+	white-space: nowrap !important;
+	max-width: 80% !important;
+	font-size: 13px !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
+.overflow-attachment3 {
+	white-space: nowrap !important;
+	font-size: 12px !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	font-weight: 400 !important;
+}
+
+.attachment-border {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.btn-check-check {
+    color: orange !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.btn-okcountcolor {
+    color: green !important;
+}
+.btn-ReExamokcountcolor {
+    color: orange !important;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .IE-header-width
+    {
+        width: 211px !important;
+    }
+    .AutomatedQFLPage-progressmonitor0 {
+        margin-top: 30px;
+    }
+    .AutomatedQFLPage-progressmonitor1 {
+        margin-top: 30px !important;
+    }
+    .AutomatedQFLPage-progressmonitor2 {
+        margin-top: 30px !important;
+    }
+    .IE-mt-0{
+        margin-top: 0px !important;
+    }
+    .IE-display-block {
+        display: block !important
+    }
+}
+@supports (-ms-ime-align:auto) {
+    .AutomatedQFLPage-progressmonitor0 {
+        margin-top: 30px !important;
+    }
+
+    .AutomatedQFLPage-progressmonitor1 {
+        margin-top: 30px !important;
+    }
+
+    .AutomatedQFLPage-progressmonitor2 {
+        margin-top: 30px !important;
+    }
+}
+
+.progressMonitor-filter div i.icon, i.fa-file-excel.icon {
+    padding: 5px;
+    background: #00677F;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cursor-pointer
+{
+    cursor: pointer !important;
+}
+/*.progressMonitor-filter div i.icon, i.fa-chart-line {
+    padding: 5px;
+    background: #00677F;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}*/
+
+@media screen and (min-width: 1400px) {
+
+    .ms-drop ul {
+        max-height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+
+    .ms-drop ul {
+        max-height: 200px !important;
+    }
+}
+
+.tableFixHead {
+    overflow-y: auto !important;
+    height: 300px !important;
+    overflow-x: hidden !important;
+}

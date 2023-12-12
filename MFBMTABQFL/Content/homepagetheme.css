@@ -1,0 +1,533 @@
+/*------------------------------------------------------------------
+Audit Tool Admin Template by Ganapathi Subramaniam
+
+For
+
+Daimler India Commercial Vehicle
+
+------------------------------------------------------------------*/
+
+
+/* font-family:DaimlerCS-Regular,Arial,Helvetica Neue,Helvetica,sans-serif*/
+
+
+/*-apple-system,BlinkMacSystemFont,"Graphik",Roboto,"Open Sans","Helvetica Neue",sans-serif,Georgia,serif*/
+
+/*****************************************************************
+Audit Tool theme.css Table of Contents
+
+- Global font
+- Navbar / .navbar
+- Max Width: 767px
+- Max Width: 979px
+- Max Width: 1200px
+- Audit Tool Header
+- style from 300px to 767px
+- Internet Explorer 10 & 11
+	
+!Note: You can search using the title above
+*****************************************************************/
+/*------------------------------------------------------------------
+
+
+[Global font]
+*/
+
+
+@font-face
+{
+    font-family: DaimlerCS-Regular;
+    src: url(../fonts/DaimlerCS-Regular.eot);
+    src: url(../fonts/DaimlerCS-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/DaimlerCS-Regular.woff2) format("woff2"), url(../fonts/DaimlerCS-Regular.woff) format("woff"), url(../fonts/DaimlerCS-Regular.ttf) format("truetype"), url(../fonts/DaimlerCS-Regular.svg#DaimlerCS-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: DaimlerCS-Bold;
+    src: url(../fonts/DaimlerCS-Bold.eot);
+    src: url(../fonts/DaimlerCS-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/DaimlerCS-Bold.woff2) format("woff2"), url(../fonts/DaimlerCS-Bold.woff) format("woff"), url(../fonts/DaimlerCS-Bold.ttf) format("truetype"), url(../fonts/DaimlerCS-Bold.svg#DaimlerCS-Bold) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: DaimlerCS-Demi;
+    src: url(../fonts/DaimlerCS-Demi.eot);
+    src: url(../fonts/DaimlerCS-Demi.eot?#iefix) format("embedded-opentype"), url(../fonts/DaimlerCS-Demi.woff2) format("woff2"), url(../fonts/DaimlerCS-Demi.woff) format("woff"), url(../fonts/DaimlerCS-Demi.ttf) format("truetype"), url(../fonts/DaimlerCS-Demi.svg#DaimlerCS-Demi) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: DaimlerCA-Regular;
+    src: url(../fonts/DaimlerCA-Regular.eot);
+    src: url(../fonts/DaimlerCA-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/DaimlerCA-Regular.woff2) format("woff2"), url(../fonts/DaimlerCA-Regular.woff) format("woff"), url(../fonts/DaimlerCA-Regular.ttf) format("truetype"), url(../fonts/DaimlerCA-Regular.svg#DaimlerCA-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: DaimlerCS-Light;
+    src: url(../fonts/DaimlerCS-Light.eot);
+    src: url(../fonts/DaimlerCS-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/DaimlerCS-Light.woff2) format("woff2"), url(../fonts/DaimlerCS-Light.woff) format("woff"), url(../fonts/DaimlerCS-Light.ttf) format("truetype"), url(../fonts/DaimlerCS-Light.svg#DaimlerCS-Light) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*end of font*/
+
+/*------------------------------------------------------------------
+[ Uncategorized]
+
+*/
+
+body
+{
+    background: #f9f6f1;
+    font: 13px/1.7em '';
+    font-size-adjust: 0.49;
+    font-family: "DaimlerCS-Regular" , "Arial" , "Helvetica Neue" , "Helvetica" , "sans-serif" ,calibri; /*overflow-x: hidden;*/
+    color: #676a6c;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[Navbar / .navbar]
+*/
+
+.navbar .container
+{
+    position: relative;
+}
+
+
+
+.navbar-inner
+{
+    padding: 7px 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar-fixed-top
+{
+    position: static;
+}
+
+.navbar .nav a
+{
+    font-size: 11px;
+}
+
+.navbar .nav > li > a
+{
+    color: #383838 !important;
+}
+
+.navbar .brand
+{
+    font-weight: 600;
+    position: relative;
+    top: 2px;
+}
+
+.navbar .search-query
+{
+    background-color: #444;
+    width: 150px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.navbar .search-query::-webkit-input-placeholder
+{
+    color: #666;
+}
+
+.navbar .search-query:-moz-placeholder
+{
+    color: #666;
+}
+
+.navbar-search .search-query
+{
+    background: #008866;
+    border: 0;
+    color: #fff;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+[ Max Width: 767px]
+*/
+
+@media (max-width: 767px)
+{
+    #main
+    {
+        padding: 0 10px;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .AuditTool
+    {
+        float: left;
+        color: #000;
+        margin-top: 0vh;
+        margin-right: 0vh;
+        margin-left: 25vw;
+    }
+    .logimg
+    {
+        margin-left: 15%;
+        margin-top: 0%;
+        width: 160px;
+    }
+
+
+}
+
+
+/*------------------------------------------------------------------
+[ Max Width: 979px]
+*/
+
+@media (max-width: 979px)
+{
+    .navbar-fixed-top
+    {
+        position: static;
+        margin-bottom: 0;
+    }
+    .subnavbar
+    {
+    }
+    .subnavbar .container
+    {
+        width: auto;
+    }
+}
+
+
+/*------------------------------------------------------------------
+[ Max Width: 1200px]
+*/
+
+@media (min-width: 1200px)
+{
+    .navbar .search-query
+    {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+[Audit Tool Header]
+*/
+
+
+.logimg
+{
+    margin-left: 15%;
+    margin-top: 12%;
+    width: 230px;
+}
+
+.daimler_logout
+{
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 90%;
+    color: #000000;
+}
+
+.daimler_logout a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.daimler_info
+{
+    margin-top: 6pt;
+    position: relative;
+    margin-right: 12% !important;
+    width: auto;
+}
+
+.daimler_Changepwd
+{
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 79%;
+    color: #000000;
+}
+
+.daimler_Changepwd a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.daimler_lastlogin
+{
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 65%;
+    color: #000000;
+}
+
+.daimler_lastlogin a
+{
+    text-decoration: none;
+    color: #000000;
+}
+.AuditTool
+{
+    float: right;
+    color: #000;
+    margin-top: 6vh;
+    margin-right: 10vh;
+}
+
+.AuditTool p
+{
+    font-size: 27px;
+}
+
+.signoutpos
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000 !important;
+    margin-top: 3vh;
+}
+
+.signoutpos li a
+{
+    color: #000;
+}
+
+.signoutpos li :hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.signoutpos li :focus
+{
+    color: #000;
+    text-decoration: none;
+    background: transparent !important;
+}
+
+.signoutpos li a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.signoutpos li a:focus
+{
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon.flag-icon-squared {
+  width: 1em;
+}
+
+.flag-icon-jp {
+  background-image: url(../Images/jp.png);
+}
+.flag-icon-gb {
+  background-image: url(../Images/gb.png);
+}
+.daimler_language
+{
+    background: transparent;
+    color: #000000;
+    margin-top: 2pt;
+    margin-right: 39pt;
+    font-size: 12px;
+    }
+    .selected
+    {
+        background:#fff;
+        }
+    .languagemap
+    {
+        width:20%;
+        margin-right:8%;
+        }
+        .Languagepicker .btn-group
+        {
+        border:none;
+            }
+               .Languagepicker .btn-group
+        {
+        border:none;
+            }
+            
+            
+ .bootstrap-select .btn:focus {
+    outline: none!important;
+    
+    
+}
+
+        
+.Languagepicker li :focus
+{
+    background:transparent;
+    color:#000;
+    border:none;
+    outline:none;
+    }
+
+    .Languagepicker  .dropdown-toggle.btn-default
+{
+    background:transparent;
+    color:#000;
+    box-shadow: none;
+    outline:none;
+    border:1px solid transparent;
+    }
+        .Languagepicker  .dropdown-toggle.btn-default:focus
+{
+    background:transparent;
+    color:#000;
+    box-shadow: none;
+  border:1px solid transparent;
+  outline: none; 
+    }
+        .Languagepicker  .dropdown-toggle.btn-default:hover
+{
+    background:transparent;
+    color:#000;
+    box-shadow: none;
+     border:1px solid transparent;
+     outline: none; 
+    }
+            .Languagepicker  .dropdown-toggle.btn-default:active
+{
+    background:transparent;
+    color:#000;
+    box-shadow: none;
+     border:1px solid transparent;
+     outline: none; 
+    }
+    .Languagepicker .dropdown-toggle
+{
+    background:transparent;
+    color:#000;
+    border:none;
+    }
+
+/*------------------------------------------------------------------
+
+[style from 300px to 767px]
+*/
+/* Styles in this block are only applied if the screen size is atleast 300px wide, but no more than 767px */
+
+@media only screen and (min-width: 300px) and (max-width: 767px)
+{
+    .daimler_logout
+    {
+        margin-top: 9px;
+        position: relative;
+        margin-left: 0%;
+        color: #000000;
+    }
+    .daimler_Changepwd
+    {
+        margin-top: 9px;
+        position: relative;
+        margin-left: 0%;
+        color: #000000;
+    }
+    .daimler_info
+    {
+        margin-top: 6pt;
+        position: relative;
+        margin-left: 0px;
+        width: auto;
+    }
+    .daimler_lastlogin
+    {
+        margin-top: 9px;
+        position: relative;
+        margin-left: 0px;
+        color: #000000;
+    }
+    .AuditTool
+    {
+        float: left;
+        color: #000;
+        margin-top: 0vh;
+        margin-right: 0vh;
+        margin-left: 25vw;
+        width: 75%;
+    }
+}
+
+/*------------------------------------------------------------------
+
+[Internet Explorer 10 & 11]
+*/
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    body
+    {
+        background: #f9f6f1;
+        font: 12px/1.7em '';
+        font-family: DaimlerCS-Regular, Arial, Helvetica Neue, Helvetica, sans-serif; /*overflow-x: hidden;*/
+        color: #676a6c;
+    }
+
+
+}

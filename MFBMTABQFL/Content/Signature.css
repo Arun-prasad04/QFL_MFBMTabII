@@ -1,0 +1,25 @@
+﻿.ButtonsClass {
+    padding-left: 130px;
+    padding-bottom: 1px;
+}
+.signaturenew {
+    padding-left: 0px !important;
+    text-align: center !important;
+}
+#newSignature {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+}
+#Signaturevalidation {
+    font-size: 18px;
+}
+
+
+.SignatureDisplay {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+}

@@ -1,0 +1,875 @@
+body
+{
+    background-image: url('../Images/DTAbackground.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.bodyoverlay
+{
+}
+.modal-header
+{
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    color: #fff;
+    background: url(../Images/dbdn_bg_1920.jpg);
+    border-bottom: 1px solid #e5e5e5;
+}
+.Languagepicker .dropdown-menu > li > a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #00677F;
+}
+.navbar
+{
+    margin-bottom: 0px !important;
+    min-height: 40px !important;
+    max-height: 80px !important;
+    background: url(../Images/dbdn_bg_1920.jpg);
+    border: none;
+    border-radius: 0px !important;
+}
+.logimg
+{
+    margin-left: 15%;
+    margin-top: 3%;
+    width: 280px;
+}
+.daimler_logout
+{
+    margin-top: 28px;
+    position: absolute;
+    margin-left: 90%;
+    color: #000000;
+}
+.daimler_info
+{
+    margin-top: 21pt;
+    position: relative;
+    margin-right: -1% !important;
+    width: auto;
+}
+.daimler_Changepwd
+{
+    margin-top: 28px;
+    position: absolute;
+    margin-left: 79%;
+    color: #000000;
+}
+.daimler_lastlogin
+{
+    margin-top: 28px;
+    position: absolute;
+    margin-left: 65%;
+    color: #000000;
+}
+.daimler_language
+{
+    background: transparent;
+    color: #000000;
+    margin-top: 16pt;
+    margin-right: 39pt;
+    font-size: 12px;
+}
+.selected img
+{
+    opacity: 0.5;
+}
+.img-responsive
+{
+    height: 400px !important;
+    width: 800 !important;
+}
+.maincarousel
+{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.carousel-inner
+{
+    position: relative;
+    width: 67%;
+    overflow: hidden;
+}
+.font-size-20
+{
+    font-size: 30px;
+    color: #ffffff;
+}
+.portalcontainer
+{
+    /*border-top:1px solid black;   007A93  border-left:1px solid black;     border-right:1px solid black;     border-bottom:5px solid black;*/
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    padding: 3px;
+    padding-bottom: 25px;
+}
+.custom5colstopos
+{
+    padding-top: 3%;
+}
+.custom5colstopos .portalcontainer i
+{
+    font-size: 60px;
+    padding-right: 10px;
+    margin-left: 38%;
+    padding-top: 9px;
+    margin-bottom: 14%;
+}
+.custom5colstopos .portalcontainer strong
+{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.portalcontainer :hover
+{
+    color: #676a6c;
+}
+.portalcontainer i
+{
+    color: #676a6c;
+}
+.portalcontainer a
+{
+    color: #676a6c;
+}
+/*custom-5-cols for All tasks 00677F*/
+@media (min-width: 768px)
+{
+    .custom5cols .col-md-1, .custom5cols .col-sm-1, .custom5cols .col-lg-1
+    {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 992px)
+{
+    .custom5cols .col-md-1, .custom5cols .col-sm-1, .custom5cols .col-lg-1
+    {
+        width: 17%;
+        margin-right: 3%;
+        margin-bottom: 2%;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    .custom5cols .col-md-1, .custom5cols .col-sm-1, .custom5cols .col-lg-1
+    {
+        width: 17%;
+        margin-right: 3%;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+
+/* HEXAGON STARTS HERE */
+.hex
+{
+    width: 150px;
+    height: 86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: auto 173px;
+    -moz-background-size: auto 173px;
+    -ms-background-size: auto 173px;
+    -o-background-size: auto 173px;
+    position: relative;
+    float: left;
+    margin: 25px 5px;
+    text-align: center;
+    zoom: 1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+.hex.hex-gap
+{
+    margin-left: 86px;
+}
+
+.hex a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hex .corner-1, .hex .corner-2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -2;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 1px 0 0px 0px rgba(0,0,0,0.16), -1px 0 0px 0px rgba(0,0,0,0.12) !important;
+}
+
+.hex .corner-1
+{
+    z-index: -1;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.hex .corner-2
+{
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hex .corner-1:before, .hex .corner-2:before
+{
+    width: 173px;
+    height: 173px;
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: inherit;
+    background-repeat: no-repeat;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.hex .corner-1:before
+{
+    -webkit-transform: rotate(-60deg) translate(-87px, 0px);
+    -moz-transform: rotate(-60deg) translate(-87px, 0px);
+    -ms-transform: rotate(-60deg) translate(-87px, 0px);
+    -o-transform: rotate(-60deg) translate(-87px, 0px);
+    transform: rotate(-60deg) translate(-87px, 0px);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.hex .corner-2:before
+{
+    -webkit-transform: rotate(60deg) translate(-48px, -11px);
+    -moz-transform: rotate(60deg) translate(-48px, -11px);
+    -ms-transform: rotate(60deg) translate(-48px, -11px);
+    -o-transform: rotate(60deg) translate(-48px, -11px);
+    transform: rotate(60deg) translate(-48px, -11px);
+    bottom: 0;
+}
+
+
+.container
+{
+    width: 1100px;
+    top: 10px;
+    left: 3%;
+    margin-left: 70px;
+    margin-top: 2%;
+}
+/* Custom styles*/
+.hex .inner
+{
+    color: #eee;
+}
+
+.hex h4
+{
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: "DaimlerCS-Regular" , "Arial" , "Helvetica Neue" , "Helvetica" , "sans-serif" ,calibri;
+    margin: 0;
+}
+
+.hex hr
+{
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.hex p
+{
+    font-size: 16px; /*font-family: 'Kotta One', serif;*/
+    font-family: "DaimlerCS-Regular" , "Arial" , "Helvetica Neue" , "Helvetica" , "sans-serif" ,calibri;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hex.hex-1
+{
+    opacity: 0.8;
+}
+
+.hex.hex-2
+{
+    background-image: url('../Images/dbdn_bg_1920.jpg');
+    cursor:not-allowed;
+}
+
+
+.hex.hex-3:hover
+{
+    background: #004355; /*615d5d  004355*/
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.hex.hex-3:hover i
+{
+    color: #D3D3D3; /*615d5d  004355*/
+}
+
+.hex.hex-3
+{
+    background: #00677F;
+    opacity: 0.8;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5); /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important; */
+    opacity: 0.8;
+}
+
+.hex.hex-disabled
+{
+    background: #5097AB;
+    opacity: 0.8;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5); /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important; */
+    opacity: 0.8;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+.hexvisibiliy
+{
+}
+
+
+
+
+
+.wrapper
+{
+    width: 75%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    margin-top: -19px;
+    margin-right: 15px;
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -webkit-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -moz-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -ms-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+}
+.Wrappercontent
+{
+    padding-top: 29%;
+}
+.Tool
+{
+    background: #525151;
+    border-radius: 150px;
+    color: #fff;
+    font-size: 15px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding-top: 28px;
+    border: 4px solid grey;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+.Tool:hover
+{
+    background: #00677F;
+    border-radius: 150px;
+    color: #fff;
+    font-size: 15px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding-top: 28px;
+    border: 4px solid #525151;
+    opacity: 0.6;
+    margin: 0 auto; /*    margin-left: 22px;*/
+}
+.Toolname a:hover
+{
+    text-decoration: none;
+}
+.Toolicon
+{
+    text-align: center;
+}
+.Toolicon i
+{
+    color: #ffffff;
+}
+.verticaline
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.leftbg1
+{
+    background-image: url('../Images/FusoThunderbolt.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.leftbg img
+{
+    width: 92%;
+    min-height: 100vh;
+    position: absolute;
+}
+.searchicon
+{
+    color: #000;
+}
+.Wrappercontent .InternalAuditTool: hover .font-size-20
+{
+    color: #00677F !important;
+}
+
+.class i:hover
+{
+    color: #00677F !important;
+}
+
+
+.rectanglepanel
+{
+    width: 300px;
+    height: 110px;
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -webkit-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -moz-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -ms-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+}
+.circle
+{
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    float: right;
+    margin-right: -5%;
+    margin-top: 7%;
+}
+.circle1
+{
+    border-bottom-right-radius: 50px;
+    height: 25px;
+    width: 17px;
+    border-top-right-radius: 50px;
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -webkit-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -moz-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -ms-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    float: right;
+    margin-right: -17px;
+    margin-top: 3%;
+}
+.emptycircle
+{
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    background: black;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 7%;
+}
+.homepagename
+{
+    display: inline-block;
+    color: #fff;
+    width: 70%;
+    padding-top: 15%;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.Homepageicon
+{
+    display: inline-block;
+}
+
+.squarelist
+{
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -webkit-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -moz-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -ms-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%); /*height: 90px; border:1px solid rgba(74, 74, 74, 0.6) ;*/
+    border: 1px solid rgba(115, 112, 112, 0.6);
+    padding: 10px;
+    text-align: center;
+}
+
+.squarelist
+{
+    color: #00677F !important;
+    opacity: 0.8;
+}
+.greyscale
+{
+    filter: grayscale(100%);
+}
+
+.squaredisabled
+{
+    background: rgba(82, 80, 80, 0.82);
+}
+
+.squareActive
+{
+    /*background: rgba(82, 80, 80, 0.82); rgba(109, 108, 108, 0.82)*/
+    background: #00677F;
+    cursor: pointer;
+    box-shadow: inset 0px 2px 10px rgba(255,255,255,0.6);
+}
+
+.squareActive:hover
+{
+    background: #00677F !important;
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: none;
+    box-shadow: inset 0px 0px 45px rgba(0,0,0,0.6);
+}
+.squareDisabled
+{
+    /*background: rgba(82, 80, 80, 0.82); rgba(109, 108, 108, 0.82)*/
+    background: #00677F;
+    box-shadow: inset 110px 110px 290px rgba(115, 111, 111, 0.6);
+}
+
+.squaredisableddark
+{
+    background: rgba(60, 59, 59, 0.82);
+}
+.squareimages
+{
+    background-image: url('../Images/trail.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages2
+{
+    background-image: url('../Images/trail2.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages3
+{
+    background-image: url('../Images/trail3.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages4
+{
+    background-image: url('../Images/trail4.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages5
+{
+    background-image: url('../Images/trail5.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages6
+{
+    background-image: url('../Images/trail6.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.squareimages7
+{
+    background-image: url('../Images/trail7.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages8
+{
+    background-image: url('../Images/trail8.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages9
+{
+    background-image: url('../Images/trail9.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages10
+{
+    background-image: url('../Images/trail10.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages11
+{
+    background-image: url('../Images/trail11.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages12
+{
+    background-image: url('../Images/trail12.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages13
+{
+    background-image: url('../Images/trail13.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages14
+{
+    background-image: url('../Images/trail14.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages15
+{
+    background-image: url('../Images/trail15.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages16
+{
+    background-image: url('../Images/trail16.png');
+    background-attachment: initial;
+    background-size: auto;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squareimages17
+{
+    background-image: url('../Images/trail17.png');
+    background-attachment: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.squarename
+{
+    color: #fff;
+    font-size: 14px;
+}
+
+/*custom-13-cols for All tasks*/
+@media (min-width: 768px)
+{
+    .custom13cols .col-md-1, .custom13cols .col-sm-1, .custom13cols .col-lg-1
+    {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 992px)
+{
+    .custom13cols .col-md-1, .custom13cols .col-sm-1, .custom13cols .col-lg-1
+    {
+        width: 7.69%;
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    .custom13cols .col-md-1, .custom13cols .col-sm-1, .custom13cols .col-lg-1
+    {
+        width: 7.69%;
+        padding: 5px;
+    }
+
+}
+@media (min-width: 1200px) and (max-width: 1350px)
+{
+    .font-size-20
+    {
+        font-size: 23px;
+        color: #ffffff;
+    }
+    .squarename
+    {
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+    }
+}
+
+/*Internet Explorer 10 & 11*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    .squarename
+    {
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .squarelist
+    {
+        color: #00677F !important;
+        opacity: 0.8;
+        padding-left: 5px;
+    }
+}
+
+
+/*Strong Password Css*/
+
+#ChangePasswordForm .short
+{
+    font-weight: bold;
+    color: #92100d;
+    font-size: smaller;
+}
+#ChangePasswordForm .weak
+{
+    font-weight: bold;
+    color: #d58512;
+    font-size: smaller;
+}
+#ChangePasswordForm .good
+{
+    font-weight: bold;
+    color: #22a6ef;
+    font-size: smaller;
+}
+#ChangePasswordForm .strong
+{
+    font-weight: bold;
+    color: #259255;
+    font-size: smaller;
+}
+
+#ChangePasswordForm .progshort
+{
+    height: 3px;
+    width: 10%;
+    border-radius: 4px;
+    margin-top: 7px;
+    background: #92100d;
+}
+
+#ChangePasswordForm .progweak
+{
+    height: 3px;
+    width: 15%;
+    border-radius: 4px;
+    margin-top: 7px;
+    background: #d58512;
+}
+
+#ChangePasswordForm .proggood
+{
+    height: 3px;
+    width: 20%;
+    border-radius: 4px;
+    margin-top: 7px;
+    background: #22a6ef;
+}
+
+#ChangePasswordForm .progstrong
+{
+    height: 3px;
+    width: 25%;
+    border-radius: 4px;
+    margin-top: 7px;
+    background: #259255;
+}
+#ChangePasswordForm .form-group
+{
+    margin-bottom: 0px !important;
+    min-height: 85px;
+}
+
+
+.anchrbtn
+{
+    background-color: buttonface;
+    color: #676a6c;
+}

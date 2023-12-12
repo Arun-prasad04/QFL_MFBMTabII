@@ -1,0 +1,30 @@
+﻿
+.overflow-attachment1 {
+    white-space: nowrap !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    font-weight: 800;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.overflow-attachment2 {
+    white-space: nowrap !important;
+    max-width: 80% !important;
+    font-size: 13px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.overflow-attachment3 {
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-weight: 400 !important;
+}
+
+.attachment-border {
+    border: 1px solid #ddd;
+    padding: 10px;
+}

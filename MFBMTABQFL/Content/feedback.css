@@ -1,0 +1,994 @@
+﻿.mt-5px{
+    margin-top: 5px !important;
+}
+.mt-n5 {
+    margin-top: -5px !important;
+}
+.feedback-action {
+    width: 17% !important;
+}
+.ml-0{
+    margin-left: 0px !important;
+}
+.navbar {
+  
+    border: 0px solid transparent !important;
+}
+.m-lr-0{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.p-lr-0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.feedback-tab-heading thead th {
+    vertical-align: middle !important;
+    text-align: center !important;
+    height: 30px;
+}
+
+.feedback-gate-heading thead th {
+    vertical-align: middle !important;
+    text-align: center !important;
+    height: 30px !important;
+}
+
+.gate-arrow {
+    background: #016698 !important;
+}
+
+    .gate-arrow a {
+        color: #ffffff !important;
+    }
+
+.gate-active {
+    background: #016698 !important;
+    color: #ffffff !important;
+}
+
+    .gate-active a {
+        color: #ffffff !important;
+    }
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc {
+    background: none;
+}
+
+table.checkItems tr .feebback-pending-td:last-child .feebback-pending-buttons {
+    padding: 10px !important;
+    padding-left: 1px !important;
+}
+
+.checkItems tr .feebback-pending-td:last-child, .checkItems tr th:last-child {
+    padding: 8px 0px !important;
+}
+
+.checkItems tr td .feebback-pending-buttons a.btn {
+    padding: 0px !important;
+}
+
+
+
+
+    /*.tblheadtext th {
+    padding-bottom: 15px !important;
+    padding-top: 15px !important
+}*/
+
+    .feedback-modal-body {
+        overflow-y: scroll;
+        max-height: 350px;
+    }
+
+    .feedback-modal-content {
+        border-radius: 50px !important;
+    }
+
+    .add {
+        margin-left: 5px;
+        font-size: 28px;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .remove {
+        margin-left: 5px;
+        font-size: 28px;
+    }
+
+    .plus-minus {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+
+    .feedback-modal-buttons {
+        height: 120px !important;
+        font-size: 16px !important;
+        background-color: #ddd;
+        font-weight: bold !important;
+        padding: 6px 5px !important;
+        white-space: pre-line !important;
+    }
+
+    .feedback-modal-buttons-click {
+        background-color: #00677F !important;
+        color: #ffffff !important;
+    }
+
+    .feedback-input-buttons {
+        font-size: 12px !important;
+        background-color: #ddd;
+        font-weight: bold !important;
+        padding: 6px 3px !important;
+        white-space: pre-line !important;
+    }
+
+    .feedback-input-buttons-click {
+        background-color: #00677F !important;
+        color: #ffffff !important;
+    }
+
+.feedback-modal-buttons2 {
+    height: 160px !important;
+    font-size: 75px !important;
+    
+}
+
+
+        .checkItems2 th {
+            background: #add8e6;
+        }
+
+.btn-close {
+    color: #fff !important;
+    background-color: red !important;
+    border-color: red !important;
+}
+.btn-reset {
+    color: white !important;
+    background-color: #af1d1d !important;
+    border-color: #af1d1d !important;
+}
+
+.btn-OkCheckItems {
+    color: white !important;
+    background-color: #99b9d4 !important;
+    border-color: #99b9d4 !important;
+}
+
+.btn-NotOkCheckItems {
+    color: #fff !important;
+    background-color: #e08282 !important;
+    border-color: #e08282 !important;
+}
+
+
+    .btn-closeCheck {
+        background: none !important;
+    }
+
+.btn-skipCheckItems {
+    color: #fff !important;
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+}
+
+    .btn-check {
+        color: #fff !important;
+        background-color: green !important;
+        border-color: green !important;
+    }
+
+    .btn-saveCheck {
+        background: none !important;
+    }
+
+    .btn-skip {
+        color: #fff !important;
+        background-color: gray !important;
+        border-color: gray !important;
+    }
+
+    .color-green {
+        color: green !important;
+    }
+
+    .color-red {
+        color: red !important;
+    }
+
+    .color-orange {
+        color: orange !important;
+    }
+
+    .color-gray {
+        color: gray !important;
+    }
+
+    .btn-skipCheck {
+        background: none !important;
+    }
+
+.display-flex {
+    display: inline-table !important;
+}
+
+.feedback-button-number1 {
+    /*margin-left: 10px !important;*/
+    color: orange !important;
+    margin-left: 3px !important;
+}
+@media (max-width: 899px) {
+
+
+    .checkItems2 tr td:nth-child(1), .checkItems2 tr th:nth-child(1) {
+        width: 21% !important;
+    }
+
+
+    .checkItems2 tr td:nth-child(2), .checkItems2 tr th:nth-child(2) {
+        width: 21% !important;
+    }
+
+    .checkItems2 tr td:nth-child(3), .checkItems2 tr th:nth-child(3) {
+        width: 16% !important;
+    }
+
+    .checkItems2 tr td:nth-child(4), .checkItems2 tr th:nth-child(4) {
+        width: 5% !important;
+    }
+
+    .checkItems2 tr td:nth-child(5), .checkItems2 tr th:nth-child(5) {
+        width: 15% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(6), .checkItems2 tr th:nth-child(6) {
+        width: 11% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(7), .checkItems2 tr th:nth-child(7) {
+        width: 10% !important;
+        border: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .checkItems2 tr td:nth-child(1), .checkItems2 tr th:nth-child(1) {
+        width: 23% !important;
+    }
+
+
+    .checkItems2 tr td:nth-child(2), .checkItems2 tr th:nth-child(2) {
+        width: 23% !important;
+    }
+
+    .checkItems2 tr td:nth-child(3), .checkItems2 tr th:nth-child(3) {
+        width: 20% !important;
+    }
+
+    .checkItems2 tr td:nth-child(4), .checkItems2 tr th:nth-child(4) {
+        width: 7% !important;
+    }
+
+    .checkItems2 tr td:nth-child(5), .checkItems2 tr th:nth-child(5) {
+        width: 7% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(6), .checkItems2 tr th:nth-child(6) {
+        width: 15% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(7), .checkItems2 tr th:nth-child(7) {
+        width: 5% !important;
+        border: none;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+
+    .checkItems2 tr td:nth-child(1), .checkItems2 tr th:nth-child(1) {
+        width: 23% !important;
+    }
+
+
+    .checkItems2 tr td:nth-child(2), .checkItems2 tr th:nth-child(2) {
+        width: 23% !important;
+    }
+
+    .checkItems2 tr td:nth-child(3), .checkItems2 tr th:nth-child(3) {
+        width: 20% !important;
+    }
+
+    .checkItems2 tr td:nth-child(4), .checkItems2 tr th:nth-child(4) {
+        width: 7% !important;
+    }
+
+    .checkItems2 tr td:nth-child(5), .checkItems2 tr th:nth-child(5) {
+        width: 7% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(6), .checkItems2 tr th:nth-child(6) {
+        width: 14% !important;
+        border: none;
+    }
+
+    .checkItems2 tr td:nth-child(7), .checkItems2 tr th:nth-child(7) {
+        width: 5% !important;
+        border: none;
+    }
+}
+
+
+    @media screen and (min-width:900px) and (max-width:1023px) {
+
+        .checkItems2 tr td:nth-child(1), .checkItems2 tr th:nth-child(1) {
+            width: 21% !important;
+        }
+
+
+        .checkItems2 tr td:nth-child(2), .checkItems2 tr th:nth-child(2) {
+            width: 21% !important;
+        }
+
+        .checkItems2 tr td:nth-child(3), .checkItems2 tr th:nth-child(3) {
+            width: 16% !important;
+        }
+
+        .checkItems2 tr td:nth-child(4), .checkItems2 tr th:nth-child(4) {
+            width: 5% !important;
+        }
+
+        .checkItems2 tr td:nth-child(5), .checkItems2 tr th:nth-child(5) {
+            width: 15% !important;
+            border: none;
+        }
+
+        .checkItems2 tr td:nth-child(6), .checkItems2 tr th:nth-child(6) {
+            width: 11% !important;
+            border: none;
+        }
+
+        .checkItems2 tr td:nth-child(7), .checkItems2 tr th:nth-child(7) {
+            width: 11% !important;
+            border: none;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .feedback-button-number {
+            /*margin-left: 10px !important;*/
+            color: red !important;
+        }
+
+       
+        .checkItems tr td span i {
+            font-size: 12px !important;
+            padding: 10px !important;
+        }
+
+        .checkItems tr td:nth-child(1), .checkItems tr th:nth-child(1) {
+            width: 21% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(2), .checkItems tr th:nth-child(2) {
+            width: 21% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(3), .checkItems tr th:nth-child(3) {
+            width: 16% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(4), .checkItems tr th:nth-child(4) {
+            width: 7% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(5), .checkItems tr th:nth-child(5) {
+            width: 7% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(6), .checkItems tr th:nth-child(6) {
+            width: 25% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(7), .checkItems tr th:nth-child(7) {
+            width: 3% !important;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .checkItems tr td span i, .fa-circle, .fa-comments {
+            font-size: 12px !important;
+        }
+
+        .checkItems tr td:nth-child(1), .checkItems tr th:nth-child(1) {
+            width: 23% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(2), .checkItems tr th:nth-child(2) {
+            width: 23% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(3), .checkItems tr th:nth-child(3) {
+            width: 20% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(4), .checkItems tr th:nth-child(4) {
+            width: 7% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(5), .checkItems tr th:nth-child(5) {
+            width: 7% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(6), .checkItems tr th:nth-child(6) {
+            width: 18% !important;
+            text-align: center;
+        }
+
+        .checkItems tr td:nth-child(7), .checkItems tr th:nth-child(7) {
+            width: 5% !important;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+
+
+    .material-switch > input[type="checkbox"] {
+        display: none;
+    }
+
+    .material-switch > label {
+        cursor: pointer;
+        height: 0px;
+        position: relative;
+        width: 40px;
+    }
+
+        .material-switch > label::before {
+            background: rgb(0, 0, 0);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            content: '';
+            height: 16px;
+            margin-top: -8px;
+            position: absolute;
+            opacity: 0.3;
+            transition: all 0.4s ease-in-out;
+            width: 40px;
+        }
+
+        .material-switch > label::after {
+            background: rgb(255, 255, 255);
+            border-radius: 16px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            content: '';
+            height: 24px;
+            left: -4px;
+            margin-top: -8px;
+            position: absolute;
+            top: -4px;
+            transition: all 0.3s ease-in-out;
+            width: 24px;
+        }
+
+    .material-switch > input[type="checkbox"]:checked + label::before {
+        background: inherit;
+        opacity: 0.5;
+    }
+
+    .material-switch > input[type="checkbox"]:checked + label::after {
+        background: inherit;
+        left: 20px;
+    }
+
+    .text-gray {
+        color: gray !important;
+    }
+
+
+
+    .checkItems tr td span a.btn {
+        padding: 0px !important;
+    }
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .feedback-icon-whitespace {
+        white-space: nowrap !important;
+    }
+}
+
+.overflow-attachment1 {
+    white-space: nowrap !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    font-weight: 800;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.overflow-attachment2 {
+    white-space: nowrap !important;
+    max-width: 80% !important;
+    font-size: 13px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.overflow-attachment3 {
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-weight: 400 !important;
+}
+
+.attachment-border {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
+body {
+    font-size: 12px !important;
+}
+
+
+.ml-5{
+    margin-left: 5px !important;
+}
+
+.fontbold{
+    font-weight:bold;
+}
+
+
+
+.rework-body tr td span a.btn {
+    background: #007d99;
+    padding: 2px;
+    color: #fff;
+}
+.rework-body tr td, .rework-body tr th {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.rework-header th {
+    background: #add8e6;
+}
+
+.rework-body tr td span i {
+    font-size: 12px !important;
+    padding: 8px !important;
+}
+
+.rework-header tr td:nth-child(1), .rework-header tr th:nth-child(1) {
+    width: 15% !important;
+}
+
+
+.rework-header tr td:nth-child(2), .rework-header tr th:nth-child(2) {
+    width: 13% !important;
+}
+
+.rework-header tr td:nth-child(3), .rework-header tr th:nth-child(3) {
+    width: 17% !important;
+}
+
+.rework-header tr td:nth-child(4), .rework-header tr th:nth-child(4) {
+    width: 13% !important;
+}
+
+.rework-header tr td:nth-child(5), .rework-header tr th:nth-child(5) {
+    width: 15% !important;
+    border: none;
+}
+
+.rework-header tr td:nth-child(6), .rework-header tr th:nth-child(6) {
+    width: 30% !important;
+    border: none;
+}
+
+
+.rework-body tr td:nth-child(1), .rework-body tr th:nth-child(1) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.rework-body tr td:nth-child(2), .rework-body tr th:nth-child(2) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.rework-body tr td:nth-child(3), .rework-body tr th:nth-child(3) {
+    width: 20% !important;
+    text-align: center;
+}
+
+.rework-body tr td:nth-child(4), .rework-body tr th:nth-child(4) {
+    width: 13% !important;
+    text-align: center;
+}
+
+.rework-body tr td:nth-child(5), .rework-body tr th:nth-child(5) {
+    width: 13% !important;
+    text-align: center;
+}
+
+
+.rework-body tr td:nth-child(6), .rework-body tr th:nth-child(6) {
+    width: 24% !important;
+    text-align: center;
+}
+
+
+
+
+
+
+.reexam-body tr td span a.btn {
+    background: #007d99;
+    padding: 0px;
+    color: #fff;
+}
+
+.reexam-body tr td, .reexam-body tr th {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.reexam-header th {
+    background: #add8e6;
+}
+
+.reexam-body tr td span i {
+    font-size: 12px !important;
+    padding: 8px !important;
+}
+
+.reexam-header tr td:nth-child(1), .reexam-header tr th:nth-child(1) {
+    width: 15% !important;
+}
+
+
+.reexam-header tr td:nth-child(2), .reexam-header tr th:nth-child(2) {
+    width: 15% !important;
+}
+.reexam-header tr td:nth-child(3), .reexam-header tr th:nth-child(3) {
+    width: 17% !important;
+}
+
+.reexam-header tr td:nth-child(4), .reexam-header tr th:nth-child(4) {
+    width: 15% !important;
+}
+
+.reexam-header tr td:nth-child(5), .reexam-header tr th:nth-child(5) {
+    width: 16% !important;
+    border: none;
+}
+.reexam-header tr td:nth-child(6), .reexam-header tr th:nth-child(6) {
+    width: 24% !important;
+    border: none;
+}
+
+.reexam-body tr td:nth-child(1), .reexam-body tr th:nth-child(1) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.reexam-body tr td:nth-child(2), .reexam-body tr th:nth-child(2) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.reexam-body tr td:nth-child(3), .reexam-body tr th:nth-child(3) {
+    width: 20% !important;
+    text-align: center;
+}
+
+.reexam-body tr td:nth-child(4), .reexam-body tr th:nth-child(4) {
+    width: 13% !important;
+    text-align: center;
+}
+
+.reexam-body tr td:nth-child(5), .reexam-body tr th:nth-child(5) {
+    width: 13% !important;
+    text-align: center;
+}
+.reexam-body tr td:nth-child(6), .reexam-body tr th:nth-child(6) {
+    width: 24% !important;
+    text-align: center;
+}
+.ml-5
+{
+    margin-left: 5px !important;
+}
+
+
+
+.EmailNotify-body tr td span a.btn {
+    background: #007d99;
+    padding: 2px;
+    color: #fff;
+}
+
+.EmailNotify-body tr td, .rework-body tr th {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.EmailNotify-header th {
+    background: #add8e6;
+}
+
+.EmailNotify-body tr td span i {
+    font-size: 12px !important;
+    padding: 8px !important;
+}
+
+.EmailNotify-header tr td:nth-child(1), .EmailNotify-header tr th:nth-child(1) {
+    width: 10% !important;
+}
+
+
+.EmailNotify-header tr td:nth-child(2), .EmailNotify-header tr th:nth-child(2) {
+    width: 15% !important;
+}
+
+.EmailNotify-header tr td:nth-child(3), .EmailNotify-header tr th:nth-child(3) {
+    width: 20% !important;
+}
+
+.EmailNotify-header tr td:nth-child(4), .EmailNotify-header tr th:nth-child(4) {
+    width: 25% !important;
+}
+
+.EmailNotify-header tr td:nth-child(5), .EmailNotify-header tr th:nth-child(5) {
+    width: 15% !important;
+   /* border: none;*/
+}
+
+.EmailNotify-header tr td:nth-child(6), .EmailNotify-header tr th:nth-child(6) {
+    width: 15% !important;
+    /*border: none;*/
+}
+
+
+.EmailNotify-body tr td:nth-child(1), .EmailNotify-body tr th:nth-child(1) {
+    width: 10% !important;
+    text-align: center;
+}
+
+.EmailNotify-body tr td:nth-child(2), .EmailNotify-body tr th:nth-child(2) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.EmailNotify-body tr td:nth-child(3), .EmailNotify-body tr th:nth-child(3) {
+    width: 20% !important;
+    text-align: center;
+}
+
+.EmailNotify-body tr td:nth-child(4), .EmailNotify-body tr th:nth-child(4) {
+    width: 25% !important;
+    text-align: center;
+}
+
+.EmailNotify-body tr td:nth-child(5), .EmailNotify-body tr th:nth-child(5) {
+    width: 15% !important;
+    text-align: center;
+}
+
+
+.EmailNotify-body tr td:nth-child(6), .EmailNotify-body tr th:nth-child(6) {
+    width: 15% !important;
+    text-align: center;
+}
+
+
+
+
+/*----------------------------------------Painting Table Rework-----------------------------------------
+*/
+
+
+
+.Painting-rework-body tr td span a.btn {
+    background: #007d99;
+    padding: 2px;
+    color: #fff;
+}
+
+.Painting-rework-body tr td, .rework-body tr th {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.Painting-rework-header th {
+    background: #add8e6;
+}
+
+.Painting-rework-body tr td span i {
+    font-size: 12px !important;
+    padding: 8px !important;
+}
+
+.Painting-rework-header tr td:nth-child(1), .Painting-rework-header tr th:nth-child(1) {
+    width: 14% !important;
+}
+
+
+.Painting-rework-header tr td:nth-child(2), .Painting-rework-header tr th:nth-child(2) {
+    width: 6% !important;
+}
+
+.Painting-rework-header tr td:nth-child(3), .Painting-rework-header tr th:nth-child(3) {
+    width: 19% !important;
+}
+
+.Painting-rework-header tr td:nth-child(4), .Painting-rework-header tr th:nth-child(4) {
+    width: 16% !important;
+}
+
+.Painting-rework-header tr td:nth-child(5), .Painting-rework-header tr th:nth-child(5) {
+    width: 16% !important;
+    border: none;
+}
+
+.Painting-rework-header tr td:nth-child(6), .Painting-rework-header tr th:nth-child(6) {
+    width: 30% !important;
+    border: none;
+}
+
+
+.Painting-rework-body tr td:nth-child(1), .Painting-rework-body tr th:nth-child(1) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.Painting-rework-body tr td:nth-child(2), .Painting-rework-body tr th:nth-child(2) {
+    width: 6% !important;
+    text-align: center;
+}
+
+.Painting-rework-body tr td:nth-child(3), .Painting-rework-body tr th:nth-child(3) {
+    width: 22% !important;
+    text-align: center;
+}
+
+.Painting-rework-body tr td:nth-child(4), .Painting-rework-body tr th:nth-child(4) {
+    width: 16% !important;
+    text-align: center;
+}
+
+.Painting-rework-body tr td:nth-child(5), .Painting-rework-body tr th:nth-child(5) {
+    width: 16% !important;
+    text-align: center;
+}
+
+
+.Painting-rework-body tr td:nth-child(6), .Painting-rework-body tr th:nth-child(6) {
+    width: 27% !important;
+    text-align: center;
+}
+
+/*----------------------------------------Painting Table Rework end-----------------------------------------
+*/
+
+
+
+/*----------------------------------------Painting Table ReExamination end-----------------------------------------
+*/
+
+
+
+
+.Painting-ReExam-body tr td span a.btn {
+    background: #007d99;
+    padding: 2px;
+    color: #fff;
+}
+
+.Painting-ReExam-body tr td, .ReExam-body tr th {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.Painting-ReExam-header th {
+    background: #add8e6;
+}
+
+.Painting-ReExam-body tr td span i {
+    font-size: 12px !important;
+    padding: 8px !important;
+}
+
+.Painting-ReExam-header tr td:nth-child(1), .Painting-ReExam-header tr th:nth-child(1) {
+    width: 14% !important;
+}
+
+
+.Painting-ReExam-header tr td:nth-child(2), .Painting-ReExam-header tr th:nth-child(2) {
+    width: 6% !important;
+}
+
+.Painting-ReExam-header tr td:nth-child(3), .Painting-ReExam-header tr th:nth-child(3) {
+    width: 19% !important;
+}
+
+.Painting-ReExam-header tr td:nth-child(4), .Painting-ReExam-header tr th:nth-child(4) {
+    width: 16% !important;
+}
+
+.Painting-ReExam-header tr td:nth-child(5), .Painting-ReExam-header tr th:nth-child(5) {
+    width: 16% !important;
+    border: none;
+}
+
+.rPainting-ReExam-header tr td:nth-child(6), .Painting-ReExam-header tr th:nth-child(6) {
+    width: 30% !important;
+    border: none;
+}
+
+
+.Painting-ReExam-body tr td:nth-child(1), .Painting-ReExam-body tr th:nth-child(1) {
+    width: 15% !important;
+    text-align: center;
+}
+
+.Painting-ReExam-body tr td:nth-child(2), .Painting-ReExam-body tr th:nth-child(2) {
+    width: 6% !important;
+    text-align: center;
+}
+
+.Painting-ReExam-body tr td:nth-child(3), .Painting-ReExam-body tr th:nth-child(3) {
+    width: 22% !important;
+    text-align: center;
+}
+
+.Painting-ReExam-body tr td:nth-child(4), .Painting-ReExam-body tr th:nth-child(4) {
+    width: 16% !important;
+    text-align: center;
+}
+
+.Painting-ReExam-body tr td:nth-child(5), .Painting-ReExam-body tr th:nth-child(5) {
+    width: 16% !important;
+    text-align: center;
+}
+
+
+.Painting-ReExam-body tr td:nth-child(6), .Painting-ReExam-body tr th:nth-child(6) {
+    width: 27% !important;
+    text-align: center;
+}
+
+
+/*----------------------------------------Painting Table ReExamination end-----------------------------------------
+*/

@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="#" rel="shortcut icon" type="image/x-icon" />
+    <meta name="keywords" content="Automated QFL" />
+    <meta name="description" content="Automated QFL" />
+    <meta name="author" content="Arun Prasad" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=7; IE=8; IE=EDGE" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/fonts/css/all.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+
+    <link rel="stylesheet" href="~/Content/bootstrap-select.min.css" />
+    <link href="~/Content/flag-icon.min.css" rel="stylesheet" />
+    @*@Scripts.Render("~/bundles/jquery")*@
+    <script src="~/Scripts/jquery-1.11.min.js"></script>
+    <script src="~/Scripts/theme.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Scripts/theme.js"></script>
+    <script src="~/Scripts/jquery.validationEngine-en.js"></script>
+    <script src="~/Scripts/jquery.validationEngine.js"></script>
+    <script src="~/Scripts/DataAccessLayer.js"></script>
+    <script src="~/Scripts/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery.translate.js"></script>
+    <script src="~/Scripts/DataAccessLayer.js"></script>
+    <script src="~/Scripts/Validation.js"></script>
+
+
+    <style>
+        #drpPlant ~ .btn-group {
+            margin-top: 12px !important;
+            margin-left: 10px !important;
+        }
+        .p-lr-10{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function showloader() {
+            $('#dvload').css('display', '');
+        }
+        function hideloader() {
+            setTimeout(function () {
+                $('#dvload').css('display', 'none');
+            }, 200);
+        }
+
+
+    </script>
+    
+    <script>
+               $(document).ready(function () {
+                   countdown1(59, 59);
+                   //SessionPageLoad();
+
+                   $('body').click(function () {
+                       clearTimeout(timeoutHandle1);
+                       countdown1(59, 59);
+                   });
+
+
+                   $('#ConfirmationpopupSession').on('click', function () {
+                       $('body').off('click');
+                   });
+
+
+                   $('input').bind("change keyup input", function () {
+                       clearTimeout(timeoutHandle1);
+                       countdown1(59, 59);
+                   });
+
+               });
+        </script>
+
+    <script>
+        var timeoutHandle1 = "";
+
+        function countdown1(minutes, seconds) {
+            $("#countdetails").html("");
+            var seconds = seconds;
+            var mins = minutes;
+
+
+            function tick1() {
+
+
+                var counter = document.getElementById("countdetails").innerHTML;
+                var counts =
+                    minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+
+                $("#countdetails").html(counts);
+
+                $("#secondsIdle").html('Your session will expire in <span id="sessionTimeoutCountdown">' + counts + '</span> minutes and seconds.<br />Click on <b>OK</b> to continue your session.');
+
+                seconds--;
+
+                if (seconds >= 0) {
+                    timeoutHandle1 = setTimeout(tick1, 1000);
+
+                    if (counts == "15:00") {
+                        $('#ConfirmationpopupSession').modal('show');
+
+
+
+                    }
+
+                } else {
+
+
+
+                    if (mins >= 1) {
+
+                        // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
+                        setTimeout(function () {
+                            countdown1(mins - 1, 59);
+                        }, 1000);
+
+
+                    }
+                    else {
+
+                        LogoutSession();
+
+                    }
+                }
+
+            }
+            tick1();
+        }
+
+
+
+        function ConfirmationpopupSessionOk() {
+            InitializeUrl2();
+            //SessionPageLoad();
+            // window.location = window.location.href;
+            clearTimeout(timeoutHandle1);
+            countdown1(59, 59);
+            $('#ConfirmationpopupSession').modal('hide');
+        }
+
+        function LogoutSession() {
+            document.location.href = "../Home/Logoff";
+
+
+        }
+        function InitializeUrl2() {
+
+            var ApiFunc = '../Home/PageLoadData/'
+            JsonPostMethod(ApiFunc, '', '', function (data) {
+
+                if (data != null && data != '') {
+                    UserDetails = data;
+                    Api = UserDetails.Api;
+                    // console.log(data);
+                    UserRole = data.RoleId;
+                    RoleId = data.RoleId;
+                    Token = UserDetails.Token;
+                }
+                else {
+                    alert("Session Expired");
+                    document.location.href = "../Home/LogOut";
+
+                }
+            });
+        }
+
+        function SessionPageLoad() {
+
+            var ApiFunc = '../Home/SessionPageLoad/'
+            JsonPostMethod(ApiFunc, '', '', function (data) {
+
+                if (data != null && data != '') {
+                    UserDetails = data;
+                    Api = UserDetails.Api;
+                    // console.log(data);
+                    UserRole = data.RoleId;
+                    RoleId = data.RoleId;
+                    Token = UserDetails.Token;
+                }
+                else {
+                    alert("Session Expired");
+                    window.location.href = "Login";
+                }
+            });
+        }
+
+
+
+    </script>
+
+
+</head>
+<body id="lBody">
+
+        @*@Html.Partial("~/Views/Shared/KeepSessionAlive.cshtml")*@
+   
+
+
+    @*<nav class="navbar navbar-default forMobile navbar-expand navbar-light navbar-header-content bg-light">*@
+
+    <nav class="navbar navbar-default forMobile">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target="#automatedQFLnavbar" style="background: #fff;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand-type">
+                <a class="navbar-brand" href="javascript:void(0)" style="padding-top: 15px;">
+                    <img class="daimler-logo" src="~/Images/logo.png">
+                </a>
+            </div>
+        </div>
+        @*<span class="daimler-logo-head">
+                <img class="daimler-logo" src="~/Images/logo.png">
+            </span>*@
+        <div class="nav-heading">
+
+        </div>
+        <div class="collapse navbar-collapse" id="automatedQFLnavbar" style="height: auto">
+            @*<div class="navcontainer " style="margin-top: 40px;">*@
+
+            <ul class="nav navbar-nav" style="color: #000000;">
+                <li class="navbar-collapse-contents">
+                    <a>
+                        <select class="Languagepicker selectpicker daimler_language" data-width="fit" style="margin-top: -10px;">
+                            <option value="en" data-content='<span class="flag-icon flag-icon-gb"> </span> English'
+                                    style="text-align: center;">
+                                English
+                            </option>
+                            <option value="jp" data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'
+                                    style="text-align: center;">
+                                日本語
+                            </option>
+                        </select>
+                    </a>
+                </li>
+                <li class="navbar-collapse-contents">
+
+                    <span id="countdetails" style="display:none"></span>
+                    <a>
+                        <span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>
+                        <span class="UserNmae"
+                              id="Span1">@Session["UserName"]</span>
+                        </a>
+
+
+                    </li>
+                    <li class="navbar-collapse-contents">
+
+                        <a href='@Url.Action("ChangePassword", "Home", new { Email = ViewBag.Email, Language = ViewBag.language })'>
+                            <span class="fa fa-lock"></span>
+                            <span class="trn">Change Password</span>
+                        </a>
+
+                        @*<a href="">
+                                <span class="fas fa-lock" style="margin-right: 5px;"></span>
+                                <span class="trn">Change Password</span>
+                            </a>*@
+                    </li>
+                    <li class="navbar-collapse-contents">
+                        @*<a href="@Url.Action("Logoff", "Home")">*@
+                        <a href="../Home/Logoff/">
+                            <span class="glyphicon glyphicon-log-out"
+                                  style="margin-right: 5px; color: #000000;"></span><span class="trn">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+                @*</div>*@
+                @*<div class="AuditTool">
+                        <p>
+                            <span class="trn">DTA QM Automated QFL Tool</span>
+                        </p>
+                    </div>*@
+            </div>
+            <div class="navbar-fixed-content">
+                <div class="navbar-brand-type" style="color: #000;">
+                    <h3 style="margin-top: 10px;">DTA QM Automated QFL</h3>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <div class="subnavbar ">
+            <div class="subnavbar-inner">
+                <div class="containernav" style="margin-right: 3vw;">
+                    <span>
+                        <select id="drpPlant" class="selectpicker" data-hide-disabled="true" data-live-search="true" width="20%"></select>
+                    </span>
+
+                    <ul class="mainnav QFLnav pull-right">
+                        @*   <li class="">
+                                <a href="">
+                                    <i class="fas fa-home"></i><span class="trn">Home</span>
+                                </a>
+                            </li>*@
+                        <li class="" id="liProgressMonitor">
+                            <a href="~/Home/ProgressMonitorNew">
+                                <i class="fas fa-chart-line"></i><span class="trn">Progress Monitor New</span>
+                            </a>
+                        </li>
+                        <li class="" id="liQFLFeedback">
+                            <a href="~/Home/QFLFeedback">
+                                <i class="fab fa-quora">
+                                </i><span class="trn">QFL Feedback</span>
+                            </a>
+                        </li>
+                        @*<li class="dropdown" id="menuExtras">
+                                <a href="javascript:void(0);" class="dropdown-toggle"
+                                   data-toggle="dropdown">
+                                    <i class="far fa-chart-bar"></i><span><span class="trn">Extras</span></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="" id="liQGateMaster">
+                                        <a href="~/Home/QGateMaster">
+                                            <span class="trn">QGate Master</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Home/StandardMaster" style="cursor: pointer;">
+                                            <span class="trn">Standard Master</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Home/DefectPlaceMaster" style="cursor: pointer;">
+                                            <span class="trn">Defect Place Master</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>*@
+                        @*  <li class="dropdown" id="limenuReports">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="far fa-chart-bar"></i><span><span class="trn">Reports</span></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="" id="liDPUReports">
+                                        <a href="">
+                                            <span class="trn">DPU Report</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" style="cursor: pointer;">
+                                            <span class="trn">Defect Number Report</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>*@
+                    </ul>
+                </div>
+                @*  <div id="dvPlant" style="padding: 5px;">
+                        <div class="title">
+                            <div id="">
+                                <div class="form-group qfl-plant">
+                    <label for="" class="control-label col-md-1 col-xs-1" style="padding-top: 5px;">
+                            <span class="trn">Plant</span> <span style="color: Red"></span>
+                        </label>
+                    <div class="dmaster col-md-3 col-sm-3 col-xs-2" style="padding: 0; ">
+
+
+                    <select id="drpPlant" class="selectpicker" data-hide-disabled="true" data-live-search="true"></select>
+
+                    </div>
+                    </div>
+
+                                        </div>
+                                    </div>
+                                </div>*@
+
+            </div>
+        </div>
+
+        <div class="container-fluid mb-5 p-lr-10">
+            @RenderBody()
+        </div>
+        <div id="dvload" class="loader" style="display:none"></div>
+        <div class="navbar-fixed-bottom">
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12" style="display: none;">
+                            &copy; 2018 <a href="#">Daimler India</a>.
+                        </div>
+                        <!-- /span12 -->
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /footer-inner -->
+        </div>
+
+
+        <script>
+
+            //$(function () {
+            //                $("#sortable").sortable();
+            //            $("#sortable").disableSelection();
+            //        });
+            //$(document).ready(function () {
+
+
+
+
+
+
+
+            //});
+            $(function () {
+                $('.selectpicker').selectpicker();
+                $('.glyphicon-ok').hide();
+            });
+        </script>
+
+        <script>
+            function ChangeLanguage() {
+
+            }
+            function MaintainPlantId(PlantId) {
+                var ApiFunc = '../Home/MaintainPlantId?PlantId=' + PlantId;
+                JsonPostMethod(ApiFunc, '', '', function (data) {
+                    if (data != null && data != '') {
+                        UserDetails = data;
+                        // console.log(data);
+                    }
+                    else {
+                        alert("Session Expired");
+                        window.location.href = "Login";
+                    }
+                });
+            }
+        </script>
+
+        <!-- Alert  Modal -->
+        <!--$('#AlertModal').modal('show');
+        $('#AlertTitle').text('Alert !..');-->
+
+
+        <div class="modal fade" id="AlertModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: url('/Images/header-bg.jpg')">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id=""><span class="trn">Confirmation</span></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="AlertTitle">
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button id="AlertOk" type="button" class="btn btn-success btn-xs btn-cancel btn-center"
+                                data-dismiss="modal">
+                            <span class="trn">OK</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade masterModal" id="ConfirmationpopupSession" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-xs">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title ">
+                            <span class="trn">Alert</span>
+                        </h4>
+                    </div>
+                    <div class="modal-body" style="min-height: 80px;">
+                        <div class="col-lg-12" style="padding: 5px;">
+                            <div class="title" id="secondsIdle">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+
+                        <button type="submit" id="divnotallowed" onclick="ConfirmationpopupSessionOk()" class="btn btn-success btn-xs" data-toggle="tooltip"
+                                data-placement="top" title="Ok" display: block;" style="width: 64px;">
+                            <span class="trn">OK</span>
+                        </button>
+
+                        @*   <button type="submit" id="" class="btn btn-danger btn-xs" data-toggle="tooltip"
+                                data-placement="top" title="Cancel"  data-dismiss="modal" style="width: 64px;" >
+                                <span class="trn">Ca</span>
+                            </button>*@
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        @*<div class="modal fade" id="AlertModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-xs">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                <span class="trn">Confirmation</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="AlertTitle">
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="AlertOk" type="button" class="btn btn-success btn-xs btn-cancel btn-center"
+                                    data-dismiss="modal">
+                                <span class="trn">OK</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+        <!-- End of Alert modal -->
+        <!--Dynamic Alert  Modal -->
+
+
+        <div class="modal fade" id="DynamicAlertModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-image: url('../../Images/header-bg.jpg')">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="hTitle3"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="">
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button id="dyOk" type="button" class="btn btn-success btn-xs btn-cancel btn-center"
+                                data-dismiss="modal">
+                            <span class="trn">OK</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $(".selectpicker").next().find('button').hover(function () {
+                    $(this).css("background-color", "#fff")
+                });
+            });
+        </script>
+
+
+        <script>
+
+            $(document).ready(function () {
+                InitializeUrl1();
+                $("#lBody").mouseover(function () {
+                    timeoutcheck(UserDetails1);
+                });
+            });
+
+
+            var UserDetails1
+            function InitializeUrl1() {
+                //LoaderShow();
+                var ApiFunc = '../Home/PageLoadData/';
+                JsonPostMethod(ApiFunc, '', '', function (data) {
+                    if (data != null && data != '') {
+                        //console.log(data)
+                        UserDetails1 = data;
+
+
+                    }
+                    else {
+
+                        window.location.href = "Login";
+                    }
+                });
+            }
+        </script>
+        <!--Dynamic End of Alert modal -->
+
+    </body>
+                                                                        </html>

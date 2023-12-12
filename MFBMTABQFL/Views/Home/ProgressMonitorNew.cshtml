@@ -1,0 +1,716 @@
+﻿@{
+    ViewBag.Title = "ProgressMonitor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /*.mCustomScrollBox {
+               width: 1400px !important;
+               max-width: 1400px !important;
+           }*/
+
+
+
+    /*.mCSB_dragger_bar{
+       width:15px!important;
+    }*/
+
+
+
+  /*  .ms-drop ul {
+        max-height: 100px !important;
+    }*/
+
+
+
+
+
+    .table.dataTable {
+        width: 100% !important;
+    }
+
+    th {
+        text-align: center !important;
+    }
+
+ 
+
+        .tableFixHead thead {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+        }
+
+    /* Just common table stuff. Really. */
+    table {
+        border-collapse: collapse !important;
+    }
+
+    .dataTables_info {
+        display: none;
+    }
+
+    .ColorApply {
+        display: flex;
+    }
+
+    .square {
+        height: 30px;
+        width: 25%;
+        background-color: red;
+        border: 1px solid #c3c3c3;
+    }
+
+  
+
+    .square1 {
+        height: 30px;
+        width: 25%;
+        background-color: yellow;
+        border: 1px solid #c3c3c3;
+    }
+
+    .square2 {
+        height: 30px;
+        width: 25%;
+        background-color: deepskyblue;
+        border: 1px solid #c3c3c3;
+    }
+
+    .square3 {
+        height: 30px;
+        width: 25%;
+        background-color: white;
+        border: 1px solid #c3c3c3;
+    }
+/*
+    .ms-drop
+    {
+        min-width:100px !important;
+    }*/
+
+    .HideFilterColumns {
+        display: none;
+    }
+
+
+    .dataTables_filter {
+        display: none;
+    }
+
+    .dataTables_length {
+        display: none;
+    }
+
+    #qr-reader__scan_region video {
+        width: 100% !important;
+    }
+
+    .p-rl-10 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mCSB_scrollTools {
+        margin: 12px 8px 12px 0 !important;
+    }
+
+        .mCSB_scrollTools > .mCSB_draggerContainer > .mCSB_dragger > .mCSB_dragger_bar {
+            width: 15px !important;
+        }
+
+    .mCSB_1_scrollbar {
+        margin: 12px 0px 12px 0 !important;
+    }
+
+        .mCSB_1_scrollbar > .mCSB_draggerContainer > .mCSB_dragger > .mCSB_dragger_bar {
+            width: 4px !important;
+        }
+
+
+
+    .btn-comment {
+        background: #007d99;
+        padding: 2px;
+        color: #fff;
+    }
+
+        .btn-comment i {
+            font-size: 12px !important;
+            padding: 8px !important;
+        }
+
+        .btn-comment:hover {
+            color: #fff;
+        }
+
+
+
+
+    .Communication-content {
+        max-height: 260px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    /* Add a right margin to each icon */
+    .talk-bubbleright {
+        margin-top: 20px;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #a3a4a4;
+    }
+
+    .talk-bubbleleft {
+        margin-top: 20px;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: lightseagreen;
+    }
+
+
+    .triangle.left-top:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -20px;
+        right: auto;
+        top: 0px;
+        bottom: auto;
+        border: 22px solid;
+        border-color: lightseagreen transparent transparent transparent;
+    }
+
+    .triangle.right-top:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: auto;
+        right: -20px;
+        top: 0;
+        bottom: auto;
+        border: 32px solid;
+        border-color: #a3a4a4 transparent transparent transparent;
+    }
+
+    .talktext {
+        color: white;
+        padding: 1em;
+    }
+
+
+
+
+
+
+
+    .AutomatedQFLPage-progressmonitor0 > .mCustomScrollBox {
+        /*width: 1000px;
+                   max-width: 1000px;*/
+
+        overflow: scroll !important;
+    }
+
+
+    .AutomatedQFLPage-progressmonitor0 {
+        /*width: 1000px;*/
+    }
+
+    .AutomatedQFLPage-progressmonitor1 > .mCustomScrollBox {
+        /*width: 1000px !important;
+                   max-width: 1000px !important;*/
+    }
+
+    .AutomatedQFLPage-progressmonitor1 {
+        /*width: 1000px !important;*/
+    }
+
+    .AutomatedQFLPage-progressmonitor-page > .mCustomScrollBox {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .Communication-content {
+        max-height: 260px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+
+    /*.AutomatedQFLPage-progressmonitor {
+               width: 1400px !important;
+           }*/
+
+    /*.i.fa-chart-line {
+           padding: 5px;
+           background: #00677F;
+           color: #fff;
+           border-radius: 3px;
+           cursor: pointer;
+       }*/
+</style>
+
+<link href="~/Content/font_awesome.min.css" rel="stylesheet" />
+<link href="~/Content/font_awesome_all.min.css" rel="stylesheet" />
+
+<link href="~/Content/progressMonitorNew.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap-datetimepicker.js"></script>
+<script src="~/Plugins/ProgressMonitorNew.js"></script>
+<script src="~/Scripts/underscore.js"></script>
+
+<script src="~/Plugins/instascan.js"></script>
+@*
+<script src="~/Plugins/QrCodeScanner.js"></script>*@
+<script src="~/Scripts/html5-qrcode.min.js"></script>
+
+<link href="~/Content/jquery.dataTables.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.dataTables.js"></script>
+
+<link href="~/Content/bootstrap-multiselect.css" rel="stylesheet" />
+<script src="~/Scripts/multiple-select.js"></script>
+<link href="~/Content/multiple-select.css" rel="stylesheet" />
+
+
+
+
+<div class="Table_contentpanel  ">
+    <div class="Audittrackertitlebg ">
+        <span class="trn" data-trn-key="Progress Monitor New" data-trn-value="">
+            Progress Monitor New
+        </span>
+        <i class="fas fa-chart-line icon pull-right" style="padding:5px;background:#00677F;color:#fff;border-radius:3px;cursor: pointer; display:none" onclick="OldProgress()" data-toggle="tooltip" title="Old Progress" data-placement="bottom" data-original-title="New Progress"> </i>
+
+        <i class="fas fa-file-excel icon pull-right mr-5" id="ExportExcel" onclick="ExcelExportProgressMonitor()" data-toggle="tooltip" data-placement="bottom" data-original-title="Export to Excel"></i>
+
+
+    </div>
+
+
+
+    @*<div class="row m-t-30">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div id="qr-reader" style="width:100%;display:none"></div>
+            <div id="qr-reader-results" style="display:none"></div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>*@
+
+
+
+    <hr style="margin-top: 1px; margin-bottom: 1px;">
+    <div class="row mt-10 ">
+        <div class="col-sm-11">
+            <div class="col-lg-5 col-sm-4 col-md-5">
+                <div class="row">
+                    <label for="" class=" col-sm-4" style=" padding-left: 5px;">
+                        <span>VIN/Prod.No</span>
+                    </label>
+                    <div class="col-sm-8" style="">
+                        <div class="row">
+                            <div class="col-sm-6" style=" padding-right: 5px;">
+                                <input id="vinfrom" type="text" class="form-control" placeholder="">
+
+                            </div>
+
+                            <div class="col-sm-6" style=" padding-left: 5px;">
+                                <input id="vinto" type="text" class="form-control" placeholder="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            @*<div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="150" rowspan="2">000000</td>
+                            <td width="150" rowspan="2">peri</td>
+                            <td width="150" rowspan="2">M12345678</td>
+                            <td width="150">Franklin</td>
+                            <td width="150" rowspan="2">
+                                <span class="feebback-pending-buttons" style="color:red">
+                                    <a href="#" class="btn btn-close" data-toggle="tooltip" title="Not OK" aria-hidden="true">
+                                        <i style="color:red" class="fas fa-times" ToolTipService.ShowOnDisabled="True"></i>
+                                    </a>
+                                    1
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td width="150">Franklin2</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>*@
+
+
+
+
+
+
+            <div class="form-group col-lg-3 col-sm-4 col-md-3">
+                <div class="row">
+                    <label for="" class="control-label col-sm-4" style="padding-left: 0px; padding-right: 0px;">
+                        <span class="trn" data-trn-key="From Date" data-trn-value="">Start Date</span>
+                    </label>
+                    <div class="col-sm-8 dmaster" style="">
+                        <input type="text" class="form-control input-sm validate[required]" id="startDate">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-lg-3 col-sm-4 col-md-3">
+                <div class="row">
+                    <label for="" class="control-label col-sm-4" style="padding-left: 0px; padding-right: 0px;">
+                        <span class="trn" data-trn-key="End Date" data-trn-value="">End Date</span><span style="color: Red"></span>
+                    </label>
+                    <div class="col-sm-8 dmaster" style="">
+                        <input type="text" class="form-control input-sm validate[required]" id="endDate">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-1" style=" padding-left: 0px;">
+            <div class="">
+                <button type="button" class="btn btn-success btn-sm" onclick="Serach()"> <i class="fas fa-search icon" data-toggle="tooltip" data-placement="bottom" data-original-title="Search"></i></button>
+            </div>
+        </div>
+        @*<div class="form-group col-lg-1 col-sm-6 col-md-1">
+            <button type="button" value="" class="btn btn-success btn-sm" onclick="OldProgress()"> Old Progress</button>
+        </div>
+        <div id="ExportExcelPM" class="form-group col-lg-1 col-sm-6 col-md-1" style="width: 3%; padding: 0;">
+            <i class="fas fa-file-excel icon" id="ExportExcel" onclick="ExcelExportProgressMonitor()" data-toggle="tooltip" data-placement="bottom" data-original-title="Export to Excel"></i>
+
+        </div>*@
+
+    </div>
+    <div class="AutomatedQFLPage-progressmonitorNew-page">
+        <div class="panel-group" id="accordions">
+
+
+            @*accordions*@
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" data-backdrop="static" id="DynamicColumnPopup" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align:center" id="DynamicColumnPopupTitle"><span class="trn"></span> </h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="Communication-content" id="BindingDynamicColumnPopupTitle">
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-10">
+                        <div class="col-sm-4">
+                            <label for="">
+                                <span>VIN/Prod.Iden.No</span>
+                            </label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input id="" type="text" class="form-control" placeholder="">
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer text-center">
+                <h4> <span style="color:red;display:none;" id="CommunicateValidation">Please enter value</span></h4>
+                <input type="submit" value="Cancel" id="" onclick="btnCloseDynamictxt()" class="btn btn-danger trn" />
+                <input type="submit" value="Submit" id="" onclick="btnSubmitDynamictxt()" class="btn btn-success btn-cancel btn-center trn" data-toggle="modal" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" data-backdrop="static" id="ReworkAndReExamCommunicate" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align:center" id="ReworkAndReExamCommunicateTitle"><span class="trn"></span> </h4>
+            </div>
+
+            <div class="modal-body">
+                @* BindingCommunicationDetails*@
+                <div class="Communication-content" id="BindingCommunicationDetails">
+
+
+                </div>
+                @*                        <textarea class="form-control mt-5px" rows="5" id="txtCommunication" style=""></textarea>*@
+
+
+            </div>
+            <div class="modal-footer text-center">
+                <h4> <span style="color:red;display:none;" id="CommunicateValidation">Please enter value</span></h4>
+                <input type="submit" value="Cancel" id="btnCommunicationclose" onclick="btnCloseComunication()" class="btn btn-danger trn" />
+                <input type="submit" value="Submit" id="btnCommunicationClick" onclick="btnSubmittCommunication()" class="btn btn-success btn-cancel btn-center trn" data-toggle="modal" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="modal fade masterModal" id="NotOkUploadImage" role="dialog" style="z-index: 100000;">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title ">
+                    <span class="trn">Image</span>
+                </h4>
+            </div>
+            <div class="modal-body" style="min-height: 80px;" id="notokImageappend">
+                @*<img src="~/Images/background.png" class="image-thumbnail" alt="Forest" style="width:100%; ">*@
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="submit" id="btnNotOKcancelImage" class="btn btn-danger btn-xs" data-toggle="tooltip"
+                        data-placement="top" title="Cancel" style="width: 64px;" data-dismiss="modal">
+                    <span class="trn">Close</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade masterModal" data-backdrop="static" id="QRCodeScanPopup" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title ">
+                    <span class="trn">QR Code Scanner</span>
+                </h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="row m-t-30">
+                    <div class="col-md-12">
+                        <div id="qr-reader" style="width:100%;display:none"></div>
+                        <div id="qr-reader-results" style="display:none"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="submit" id="btnCancelSearch" class="btn btn-danger btn-xs" data-toggle="tooltip"
+                        data-placement="top" title="Cancel" style="width: 64px;" data-dismiss="modal">
+                    <span class="trn">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+        $('#startDate').datetimepicker({ autoclose: true, pickTime: false, minView: 2, format: "dd/mm/yyyy" }).datetimepicker('update', new Date()).on('changeDate',
+            function (selected) {
+                var minDate = new Date(selected.date.valueOf());
+                $("#endDate").datetimepicker('setStartDate', minDate);
+            })
+
+
+        $("#endDate").datetimepicker({
+            autoclose: true,
+            pickTime: false,
+            minView: 2,
+            format: "dd/mm/yyyy"
+        });
+        $(".datepicker").datetimepicker({
+            autoclose: true,
+            pickTime: false,
+            minView: 2,
+            format: "dd/mm/yyyy"
+        });
+        $('#startDate').val('');
+    });
+</script>
+

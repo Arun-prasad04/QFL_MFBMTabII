@@ -1,0 +1,745 @@
+
+body
+{
+    background-image: url('../Images/DTAbackground.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding-bottom: 60px;
+    font-family: "DaimlerCS-Regular" , "Arial" , "Helvetica Neue" , "Helvetica" , "sans-serif" ,calibri;
+    overflow-y: hidden;
+}
+.flag-icon-background
+{
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.flag-icon
+{
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+.flag-icon:before
+{
+    content: "\00a0";
+}
+.flag-icon.flag-icon-squared
+{
+    width: 1em;
+}
+
+.flag-icon-jp
+{
+    background-image: url(../Images/jp.png);
+}
+.flag-icon-gb
+{
+    background-image: url(../Images/gb.png);
+}
+.logimgmain
+{
+    margin-left: 15%;
+    /*margin-top: -19vh;*/
+    margin-top:-5vh;
+    margin-bottom: 17%;
+    width: 380px;
+    text-align:center;
+    padding-top: 0px;
+}
+
+.bootstrap-select .btn:focus
+{
+    outline: none !important;
+}
+.Languagepicker li 
+{
+    z-index:9999;
+    }
+.Languagepicker .dropdown-menu > li > a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #00677F;
+}
+.Languagepicker li :focus
+{
+    background: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+.Languagepicker .dropdown-toggle.btn-default
+{
+    color: #fff;
+    background-color: #00677F;
+    border-color: #00677F;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.Languagepicker .dropdown-toggle.btn-default:focus
+{
+    color: #fff;
+    background-color: #00677F;
+    border-color: #00677F;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.Languagepicker .dropdown-toggle.btn-default:hover
+{
+    color: #fff;
+    background-color: #00677F;
+    border-color: #00677F;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.Languagepicker .dropdown-toggle.btn-default:active
+{
+    color: #fff;
+    background-color: #00677F;
+    border-color: #00677F;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.Languagepicker .dropdown-toggle
+{
+    color: #fff;
+    background-color: #00677F;
+    border-color: #00677F;
+}
+
+.daimler_language_login
+{
+    font-size: 12px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+.lanswitch
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    color: #fff;
+    vertical-align: middle;
+}
+.lgbtn
+{
+    width: 45%;
+    margin-right: -4px;
+    border-right: 2px solid #909090;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 1px;
+}
+.bootstrap-select > .btn
+{
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 7px;
+}
+.bootstrap-select.btn-group .btn .filter-option
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    margin-right: -4px;
+}
+
+.rpassword
+{
+    display: inline-block;
+    float: left;
+}
+.fpassword
+{
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+.headingbg h1
+{
+}
+.loginsize
+{
+    clear: both;
+}
+.loginbtnwidth
+{
+    width: 40%;
+}
+.otto
+{
+    background: #0e8dbc;
+    color: white;
+    text-shadow: 0 0px 0 #ccc, 0 0px 0 #c9c9c9, 0 1px 0 #bbb, 0 0px 0 #b9b9b9, 0 0px 0 #aaa, 0 0px 0px rgba(0,0,0,.1), 0 0 0px rgba(0,0,0,.1), 0 0px 0px rgba(0,0,0,.3), 0 0px 1px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.25), 0 0px 0px rgba(0,0,0,.2), 0 0px 0px rgba(0,0,0,.15);
+}
+.simple
+{
+    background: #91877b;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.glow
+{
+    color: #444;
+    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+.formcontrol
+{
+    border: 2px solid #ccc !important;
+}
+.bgtransparent
+{
+    /*background: rgba(255, 255, 255, 0.32); rgba(12, 12, 12, 0.49)*/
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+}
+.form-control
+{
+    background: transparent;
+    color: #fff;
+}
+
+/* Opaque Login box */
+.login-container
+{
+    margin: 0 auto;
+    padding-top: 11%;
+}
+/*a:hover
+{
+    color:#337ab7;
+    }*/
+
+a:hover
+{
+    color: #fff;
+    opacity: 1;
+}
+a
+{
+    color: #fff;
+    opacity: 1;
+}
+.login-container .logincontent
+{
+    padding: 15px 15px 0; /* The form */
+}
+.login-container label
+{
+    color: #fff;
+}
+.login-container .logincontent .brand-title h1
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 39px;
+    color: #fff;
+}
+.login-container .logincontent .signin-options .user-sign-in
+{
+    margin: 0;
+}
+.login-container .logincontent .log-form .lg-form
+{
+    margin-top: 10px;
+}
+.input-group-full
+{
+    position: relative;
+}
+.input-group-full > i
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 5;
+    font-size: 14px;
+    opacity: .9;
+    margin-top: 11px;
+    color: #fff; /*color: #6a6a6a;*/
+}
+
+.login-container .logincontent .log-form .lg-form .user-name
+{
+    margin-bottom: 10px;
+}
+.login-container .logincontent .log-form .lg-form .remember-password label
+{
+    color: #00677F; /*color: #086274; 337ab7*/
+    font-size: 15px;
+}
+
+.login-container .logincontent .log-form .lg-form .submit .btn
+{
+    width: 100%;
+}
+.login-container .logincontent .log-form .lg-form .forgot-password
+{
+    font-weight: 600;
+}
+
+
+/* Greater than mobile */
+@media (min-width: 769px)
+{
+    /* Helpers */
+    .no-pad-right
+    {
+        padding-right: 0 !important;
+    }
+    .no-pad-left
+    {
+        padding-left: 0 !important;
+    }
+    /* Layout */
+    .login-container
+    {
+        max-width: 540px;
+    }
+
+
+
+    .login-container .logincontent
+    {
+        margin: 0 auto 2px;
+    }
+    .login-container .logincontent .signin-options, .login-container .logincontent .log-form
+    {
+        padding: 0 50px;
+    }
+    .login-container .logincontent .log-form .lg-form
+    {
+        /* Submit Btn */
+    }
+    .login-container .logincontent .log-form .lg-form .submit .btn
+    {
+        width: auto;
+    }
+
+
+}
+
+
+
+
+
+.login .wrapper
+{
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: left;
+    margin-left: 120px;
+    background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -webkit-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -moz-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%);
+    -ms-background-image: linear-gradient( 373deg, rgba(74, 74, 74, 0.6) 0%, rgba(74, 74, 74, 0.4) 100%); /*background-image: linear-gradient( 373deg, rgba(0, 50, 70, .6) 0%, rgba(23, 49, 56, 0.4) 100%);    -webkit-background-image: linear-gradient( 373deg, rgba(0, 50, 70, .6) 0%, rgba(23, 49, 56, 0.4) 100%);    -moz-background-image: linear-gradient( 373deg, rgba(0, 50, 70, .6) 0%, rgba(23, 49, 56, 0.4) 100%);    -ms-background-image: linear-gradient( 373deg, rgba(0, 50, 70, .6) 0%, rgba(23, 49, 56, 0.4) 100%);*/ /*background: url(../images/dbdn_bg_1920.jpg) repeat-y center center fixed;*/ /* background-image: linear-gradient( 373deg, rgba(82, 140, 226, 0.6) 0%, rgba(23, 49, 56, 0.4) 100%); */ /* -webkit-background-image: linear-gradient( 373deg, rgba(82, 140, 226, 0.6) 0%, rgba(23, 49, 56, 0.4) 100%); */ /* -moz-background-image: linear-gradient( 373deg, rgba(82, 140, 226, 0.6) 0%, rgba(23, 49, 56, 0.4) 100%); */ /* -ms-background-image: linear-gradient( 373deg, rgba(82, 140, 226, 0.6) 0%, rgba(23, 49, 56, 0.4) 100%); */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -ms-flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*body {
+   background: url(../images/login-bg.jpg) no-repeat center center fixed;
+   background-size: cover;
+   background-color: #2e3547;
+}*/
+
+.login .wrapper h1 > a
+{
+    color: #fff;
+    display: block;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+    padding: 2px 0;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.login .wrapper h1 > a img
+{
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.login .wrapper .login-body
+{
+    margin-top: 0;
+    background: none;
+    width: 95%;
+}
+
+.login .wrapper .login-body form
+{
+    padding: 0;
+}
+
+.login .wrapper .login-body .email input, .login .wrapper .login-body .pw input
+{
+    padding: 8px 12px;
+    height: 35px;
+    border-radius: 6px !important;
+}
+
+.login .wrapper .login-body h2
+{
+    font-weight: 300;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.login .wrapper .login-body .submit .remember
+{
+    float: left;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+
+
+.login .wrapper .login-body .submit .remember [class*=icheckbox], .login .wrapper .login-body .submit .remember label
+{
+    float: left;
+}
+
+.icheckbox_square-blue.checked
+{
+    background-position: -48px 0;
+}
+
+.login .wrapper .login-body .submit .remember label
+{
+    margin-left: 10px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 21px;
+}
+
+.login .wrapper .login-body .submit input
+{
+    background-color: #00677F;
+    border-color: #00677F;
+    border-radius: 4px !important;
+}
+
+.login .wrapper .login-body .submit input:hover
+{
+    background-color: #00677F;
+    border-color: #00677F;
+}
+
+.login .wrapper .login-body .forget, .login .wrapper .login-body .forgetPwd
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login .wrapper .login-body .forget a, .login .wrapper .login-body .forgetPwd a
+{
+    padding: 5px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.login input, .login input:focus, .login textarea
+{
+    /*-webkit-border-radius: 0!important;    -moz-border-radius: 0!important;    border-radius: 0!important;*/
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 2px solid #ccc;
+}
+
+.login .wrapper .login-body .submit
+{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login .wrapper .login-body .submit .remember label, login .wrapper .login-body .submit .remember [class*=icheckbox]
+{
+    float: left;
+}
+
+@media (max-width: 420px)
+{
+    .login .wrapper
+    {
+        width: auto;
+        margin: 23px;
+        top: auto;
+        left: auto;
+        position: absolute;
+    }
+}
+
+@media screen and (min-height: 500px) and (max-height: 700px)
+{
+    .login .wrapper .login-body .forgetPwd
+    {
+        margin-top: 4px !important;
+    }
+    .login .wrapper .login-body h2
+    {
+        font-weight: 300;
+        color: #fff;
+        font-size: 24px;
+        padding: 8px 30px 8px 8px;
+    }
+}
+
+.login .wrapper .login-body form p
+{
+    line-height: normal;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login .wrapper .login-body form input.btn.btn-warning
+{
+    background-color: #00677f;
+    border-color: #00677f;
+}
+
+.login .wrapper .login-body form input.btn.btn-warning:hover
+{
+    background-color: #04586b;
+    border-color: #04586b;
+}
+
+.inputbottom
+{
+    margin-bottom: 5%;
+}
+
+.fapadding
+{
+    padding: 2px;
+}
+
+.bgwhite
+{
+    background: #fff;
+}
+
+.esinput input
+{
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.imglogo
+{
+    position: relative;
+    z-index: 9999;
+    margin-top: 13vh;
+    right: 2vw; /* height: 28px;width: 300px; */
+}
+
+.portalimage
+{
+    position: relative;
+    background: #00677f;
+    z-index: 99999;
+    float: right;
+    padding: 15px;
+    width: 350px;
+    right: 0px;
+    color: #fff;
+    margin-top: 0vh;
+    margin-bottom: 6vh;
+}
+
+.LoginError
+{
+    color: #dc6a6a;
+    right: 0%;
+    font-size: 18px;
+    padding: 5px;
+    width: 24vw;
+    position: relative;
+}
+
+
+.below5
+{
+    margin-top: 40vh;
+}
+
+.below11
+{
+    margin-top: 24vh;
+}
+
+
+.lg-form .input-group-full
+{
+    position: relative;
+}
+
+.lg-form .input-group-full > i
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 5;
+    font-size: 14px;
+    opacity: .9;
+    margin-top: 11px;
+    color: #fff; /*color: #6a6a6a;*/
+}
+.login-container .logincontent .log-form .lg-form .user-name
+{
+    margin-bottom: 10px;
+}
+.login-container .logincontent .log-form .lg-form .remember-password label
+{
+    color: #00677F; /*color: #086274; 337ab7*/
+    font-size: 15px;
+}
+
+.login-container .logincontent .log-form .lg-form .submit .btn
+{
+    width: 100%;
+}
+.login-container .logincontent .log-form .lg-form .forgot-password
+{
+    font-weight: 600;
+}
+
+
+input::-webkit-input-placeholder
+{
+    color: #ffffff !important;
+}
+
+input:-moz-placeholder
+{
+    /* Firefox 18- */
+    color: #ffffff !important;
+}
+
+input::-moz-placeholder
+{
+    /* Firefox 19+ */
+    color: #ffffff !important;
+}
+
+input:-ms-input-placeholder
+{
+    color: #ffffff !important;
+}
+.remember-password label
+{
+    color: #fff;
+    vertical-align: middle;
+}
+
+.wrapper h1
+{
+    color: #fff;
+    font-size: 32px;
+}
+
+.eblock
+{
+    display: inline-block;
+    width: 100vw;
+    margin-left: 18px;
+}
+.eblock img
+{
+    width: 100px;
+    margin-right: 25px;
+}
+.Fusoimgclass
+{
+    height: 80px;
+}
+.BBimgclass
+{
+    height: 70px;
+}
+
+.headingbg
+{
+    background: rgba(99, 97, 97, 0.62); /* opacity: 0.6; */
+    width: 400px;
+}
+
+/*Internet Explorer 10 & 11*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    .wrapper h1
+    {
+        color: #fff;
+        font-size: 28px;
+    }
+}
+
+.modal-header {
+	border-radius: 4px 4px 0 0;
+	border-bottom: none;
+	color: #fff;
+	background: url(../Images/dbdn_bg_1920.jpg);
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.forgotEmail
+{
+    color:#555 !important;
+}
+
+
+
+/****for tablet view*******/
+
+@media (max-width:768px){
+    .login .wrapper
+    {
+        width:300px;
+        margin-left:50px;
+        }
+    .logimgmain
+    {
+        width:270px;
+        }
+    .headingbg
+    {
+     width:296px;   
+    }
+    .wrapper h1
+    {
+        font-size:24px;
+        }
+    .eblock img
+    {
+     width:70px;   
+    }
+    }
